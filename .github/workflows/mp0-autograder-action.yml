@@ -1,6 +1,9 @@
 name: mp0 autograding
-"on":
+on:
   work_flow_run:
+    workflows: ["mp0-autograder-action"]
+    types: [requested]
+
 jobs:
   autograding:
     name: autograding
